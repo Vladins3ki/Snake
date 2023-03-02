@@ -1,0 +1,12 @@
+#games{
+    border:1px solid black;
+    margin: 1rem auto;
+    background-color: blanchedalmond;
+    display: block;
+}
+h1{
+    text-align: center;
+}
+#start{
+    margin-left: 725px;
+}
