@@ -1,4 +1,3 @@
-
 let ctx;
 let speedX = 0, speedY = 0;
 let gameBoard = 400;
@@ -69,36 +68,27 @@ function gameCondition(){
     if(snakeX < 0 || snakeX > gameBoard - dimension || snakeY < 0 || snakeY > gameBoard - dimension){
         text();
     }
-        
-
     for(let i = 0; i < body.length;++i){
         if(body[i][0] == snakeX && body[i][1] == snakeY){
-            text();
-            
-            
+            text(); 
         }
     }
 }
 function Direction(e){
     if(e.code == "KeyD" && speedX > -1){
         speedX = dimension;
-        speedY = 0;
-        
+        speedY = 0;  
     }
     if(e.code == "KeyA" && speedX < 1 ){
         speedX = -dimension;
         speedY = 0;
-    
     } 
     if(e.code == "KeyW" && speedY < 1){
         speedY = -dimension;
         speedX = 0;
-    
     }
     if(e.code == "KeyS" && speedY > -1){
         speedY = dimension;
         speedX = 0;
     }
 }
-
-
